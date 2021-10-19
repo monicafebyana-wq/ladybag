@@ -1,0 +1,63 @@
+.product-card {
+  text-align: left;
+  margin-bottom: 30px;
+  background-color: $second-bg;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+  &-image{
+    padding: 20px 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  &-content{
+    h1.name{
+      line-height: 1.25;
+      margin: 10px 0;
+    }
+
+    .price{
+      font-size: 22px;
+    }
+
+    i.bx{
+      font-size: 50px;
+      @include flex(center, center);
+    }
+  }
+
+  &:hover{
+    cursor: pointer;
+    box-shadow: $box-shadow2;
+    transition:0.7s;
+  }
+
+  &:not(:hover){
+    transition: 0.7s;
+  }
+}
+
+.product-card div:nth-child(2){
+  width: 100%;
+  background-color: #fff;
+  transform: translateY(100%);
+  padding: 30px;
+  line-height: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 0.7s;
+}
+
+.product-card:hover div:nth-child(2){
+  transform: translateY(0%);
+  transition: 0.7s;
+  padding: 30px 20px;
+}

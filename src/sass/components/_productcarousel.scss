@@ -1,0 +1,108 @@
+.carouselBag{
+  position: relative;
+  background-color: $second-bg;
+  margin-top: calc(#{$header-height} * -1);
+  margin-left: calc(#{$container} * -1);
+  margin-bottom: 50px;
+  padding: 0 50px;
+  width: 110%;
+  min-height: 500px;
+  max-height: 720px;
+  overflow: hidden;
+
+  @include mobile{
+    min-width: 122%;
+    @include flex(center, center);
+    flex-direction:column-reverse;
+  }
+
+  &-item{
+    @include mobile{
+      transform: translateX(5%);
+    }
+  }
+
+  &-left{
+    overflow: hidden;
+    @include flex(center, center);
+    img{
+      width: 1000px;
+    }
+
+    @include tablet{
+      display: none;
+    }
+  }
+
+  &-middle{
+    text-align: center;
+    width: 100%;
+    margin-top: 50%;
+    transform: translateY(-25%);
+
+    @include tablet{
+      margin-top: 0px;
+    }
+
+    div, h1{
+      margin-bottom: 30px;
+    }
+
+    &-category{
+      color: $txt-grey;
+    }
+
+    &-title{
+      letter-spacing: 1px;
+    }
+
+    &-price{
+      font-size: 20px;
+    }
+
+    &-button{
+      margin-top: 29px;
+      .bag-button{
+        background-color: $third-bg;
+        border: none;
+        color:$txt-white;
+        padding: 10px 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover{
+          background-color: $hover-brown
+        }
+      }
+    }
+  }
+
+  &-right{
+    margin-top: 50%;
+    transform: translateY(-25%);
+    img{
+      width: 100%;
+    }
+
+    @include tablet{
+      margin-top: 0;
+      display: none;
+    }
+  }
+
+  &-top{
+    margin-top: 50%;
+    transform: translateY(-25%);
+    display: none;
+    img{
+      width: 100%;
+    }
+
+    @include tablet{
+      display:flex;
+      margin-top: 50%;
+      transform: translateY(-25%);
+    }
+  }
+}

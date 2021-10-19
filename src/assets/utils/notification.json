@@ -1,0 +1,184 @@
+[
+  {
+    "title":"New Item Added",
+    "message":"You added new item to your cart!",
+    "type": "success",
+    "container":"bottom-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"Important",
+    "message":"You have to login first!",
+    "type": "danger",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"Congrats",
+    "message":"Your login is successful",
+    "type": "success",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"Your Email / Password is Wrong",
+    "message":"Please fill in your email or password correctly!",
+    "type": "danger",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"Congrats",
+    "message":"You have successfully registered!",
+    "type": "success",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"This user already exist!",
+    "message":" ",
+    "type": "danger",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"You are logged out!",
+    "message":" ",
+    "type": "warning",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"Your Payment is Successful",
+    "message":"Thank you for shopping!",
+    "type": "success",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"Quantity is updated!",
+    "message":" ",
+    "type": "success",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"This item is deleted!",
+    "message":" ",
+    "type": "success",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"Error!",
+    "message":" ",
+    "type": "danger",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"Data Updated!",
+    "message":" ",
+    "type": "success",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"Your Feedback is Submited!",
+    "message":"Thank you :D",
+    "type": "success",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 3000,
+      "showIcon": true
+    }
+  },
+  {
+    "title":"Please give us a feedback!",
+    "message":"",
+    "type": "info",
+    "container":"top-center",
+    "insert": "top",
+    "animationIn": ["animate__animated", "animate__fadeIn"],
+    "animationOut": ["animate__animated", "animate__fadeOut"],
+    "dismiss": {
+      "duration": 10000,
+      "showIcon": true
+    }
+  }
+]

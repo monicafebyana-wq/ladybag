@@ -1,0 +1,12 @@
+.userOrder{
+  &-title{
+    font-size: 27px;
+    font-weight: 300;
+    @include flex(center, center);
+  }
+  &-body{
+    margin-top: 50px;
+    width: 100%;
+    text-align: left;
+  }
+}

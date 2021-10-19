@@ -1,0 +1,64 @@
+.form-control{
+
+  &-direction{
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    line-height: 2;
+
+    label{
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+
+      .required{
+        color: $txt-red;
+      }
+    }
+
+    input, textarea{
+      width: 100%;
+      padding: 7px;
+      border: 0px;
+      background-color: transparent;
+      font-family: 'Montserrat', sans-serif;
+      border-bottom: solid 1px #a8a8a8;
+    }
+
+    input:hover, textarea:hover{
+      border-bottom: solid 1px $txt-red;
+    }
+
+    input:focus, textarea:focus{
+      border-bottom: solid 1px $txt-red;
+      outline: none;
+    }
+
+    select{
+      margin-top: 2px;
+      width: 100%;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      padding: 5px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      border-bottom: solid 1px #a8a8a8;
+
+      &:focus{
+        border-bottom: solid 1px $txt-red;
+        outline: none;
+      }
+
+      &:hover{
+        border-bottom: solid 1px $txt-red;
+      }
+    }
+
+    textarea{
+      min-height: 100px;
+    }
+
+    
+  }
+}

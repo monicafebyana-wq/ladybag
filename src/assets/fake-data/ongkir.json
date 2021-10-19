@@ -1,0 +1,14 @@
+[
+  {
+    "name" : "Cimahi Utara",
+    "harga" : 5000
+  },
+  {
+    "name" : "Cimahi Tengah",
+    "harga" : 8000
+  },
+  {
+    "name" : "Cimahi Selatan",
+    "harga" : 10000
+  }
+]

@@ -1,0 +1,97 @@
+.oSummary{
+  background-color: $main-bg;
+  padding: 30px;
+
+  &-title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: $txt-grey;
+    margin-bottom: 10px;
+  }
+
+  &-id{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: $txt-grey;
+    margin-bottom: 10px;
+  }
+
+  &-body{
+    font-size: 14px;
+    
+    .price{
+      @include flex(center, center);
+    }
+  }
+
+  &-list{
+    &-item{
+      &-bag{
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-subtotal{
+    &-text{
+      letter-spacing: 1px;
+    }
+  }
+
+  &-select{
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    border: none;
+    font-size: 14px;
+  }
+
+  &-total-price{
+    font-size: 18px;
+  }
+
+  &-submit{
+    margin: 30px 0;
+    @include flex(center, center);
+
+    input[type="submit"]{
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 0;
+      border: 0;
+      text-transform: uppercase;
+      background-color: $third-bg;
+      color:$txt-white;
+      letter-spacing: 1px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $hover-brown;
+      }
+    }
+  }
+
+  &-note{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    color:$txt-grey;
+    letter-spacing: 1px;
+
+    &-title{
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    &-body{
+      font-style: italic;
+    }
+  }
+}
+
+.hr{
+  margin: 20px 0;
+  height: 1px;
+  background-color: #a8a8a8;
+}

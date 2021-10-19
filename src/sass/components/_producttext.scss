@@ -1,0 +1,15 @@
+.prodText{
+  &-title{
+    margin: 30px 0;
+    font-size: 20px;
+  }
+  &-body{
+    line-height: 1.25;
+
+    ul{
+      margin-top: 5px;
+      list-style-type: square;
+      margin-left: 10px;
+    }
+  }
+}

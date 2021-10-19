@@ -1,0 +1,22 @@
+.recommend{
+  margin: 70px 0;
+  &-title{
+    font-size: 27px;
+    font-weight: 300;
+    @include flex(center, center);
+  }
+
+  &-body{
+    margin-top: 70px;
+  }
+
+  &-footer{
+    @include flex(center, center);
+    font-size: medium;
+
+    &:hover{
+      color:$txt-red;
+      font-weight: 500;
+    }
+  }
+}

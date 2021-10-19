@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Handbags",
+    "slug": "handbags",
+    "id" : 1
+  },
+  {
+    "name": "Tote Bags",
+    "slug": "totebags",
+    "id" : 5
+  },
+  {
+    "name": "Shoulder Bags",
+    "slug": "shoulders-bags",
+    "id" : 4
+  },
+  {
+    "name": "Crossbody Bags",
+    "slug": "crossbody-bags",
+    "id":3
+  },
+  {
+    "name": "Backpacks",
+    "slug": "backpacks",
+    "id": 2
+  }
+]

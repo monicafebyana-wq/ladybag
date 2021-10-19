@@ -1,0 +1,68 @@
+.cItem{
+  &-img{
+    width: 100%;
+  }
+
+  &-detail{
+    margin-top: 30px;
+
+    &-title{
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    &-color{
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    &-price{
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    &-quantity{
+      margin-top: 20px;
+
+      input{
+        width: 60px;
+        margin-left: 10px;
+        padding: 5px 10px;
+
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+
+    &-total{
+      margin-top: 20px;
+      font-size: 18px;
+      @include flex(center, center);
+    }
+  }
+
+  &-close{
+    cursor: pointer;
+    font-size: 24px;
+    color:$txt-grey;
+    @include flex(top, flex-end);
+
+    &.top{
+      display: none;
+
+      @include mobile{
+        display: inline;
+      }
+    }
+
+    &.right{
+      @include mobile{
+        display: none;
+      }
+    }
+  }
+}

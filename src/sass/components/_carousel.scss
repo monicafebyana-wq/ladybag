@@ -1,0 +1,86 @@
+.carousell{
+  position: relative;
+}
+
+.carousel{
+  margin-top: calc(#{$header-height} * -1);
+  margin-left: calc(#{$container} * -1);
+  margin-bottom: 50px;
+  width: 110%;
+
+  img{
+    width: 100%;
+    min-height: 70vh;
+    object-fit: cover;
+    @include tablet{
+      width: 100%;
+    }
+
+    @include mobile{
+      width: 109%;
+    }
+  }
+
+  &-text{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width:30%;
+
+    @include tablet{
+      left: 8%;
+    }
+
+    @include mobile{
+      left: 15%;
+      transform: translateX(0%);
+      width: 50%;
+    }
+
+    &-title{
+      font-size: 54px;
+      font-weight: 600;
+      color:$txt-red;
+      margin-bottom: 20px;
+
+      @include tablet{
+        font-size: 34px;
+      }
+
+      @include mobile{
+        font-size: 30px;
+      }
+    }
+
+    &-caption{
+      font-size: 24px;
+      font-style: italic;
+      line-height: 1.5;
+
+      @include tablet{
+        font-size: 16px;
+      }
+    }
+  }
+  &-button{
+    margin: 30px auto;
+    padding: 10px 13px;
+    background-color: $third-bg;
+    width: 100px;
+    text-align: center;
+    font-weight: 600;
+    color:$txt-white;
+    @include tablet{
+      padding: 8px 11px;
+    }
+
+    @include mobile{
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+  }
+
+  &-button:hover{
+    background-color: $hover-brown;
+  }
+}

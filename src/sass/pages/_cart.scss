@@ -1,0 +1,21 @@
+.cart{
+  &-body{
+    background-color: $second-bg;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  &-selection{
+    margin: 20px;
+    
+    &-title{
+      text-transform: uppercase;
+      color: $txt-grey; 
+    }
+  }
+
+  &-empty{
+    @include flex(center, center);
+    flex-direction: column;
+  }
+}

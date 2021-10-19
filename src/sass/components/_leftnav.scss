@@ -1,0 +1,58 @@
+.navleft{
+  &-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $txt-black;
+    letter-spacing: 2px;
+    font-weight: 700;
+    @include mobile{
+      font-size: 16px;
+    }
+  }
+
+  hr{
+    background-color: $txt-red;
+    border: solid 1px $txt-red;
+    height: 3px;
+    margin: 20px 0;
+  }
+
+  &-item{
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 2px;
+    overflow-y: hidden;
+    z-index: 2;
+    
+    &-category{
+      margin-bottom: 20px;
+
+      &:hover{
+        div.hover-active{
+          transform: translateX(0%);
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.logout{
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+div.hover-active{
+  width: 20px;
+  height: 2px;
+  background-color: $txt-red;
+  transform: translateX(-100%);
+  transition: 0.5s;
+  z-index: -1;
+}

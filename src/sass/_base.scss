@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import './variabels';
+@import './mixins';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webikit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+html{
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+
+@each $color, $val in $colors {
+  .color-#{$color}{
+    color: $val;
+  }
+
+  .bg-#{$color}{
+    background-color: $val;
+  }
+}
+
+@each $val in $numbers {
+  .grid-col-#{$val}{
+    grid-template-columns: repeat($val, 1fr);
+  }
+}
+
+@each $val in $numbers {
+  .grid-col-md-#{$val}{
+    @include tablet {
+      grid-template-columns: repeat($val, 1fr);
+    }
+  }
+}
+
+@each $val in $numbers {
+  .grid-col-sm-#{$val}{
+    @include mobile{
+      grid-template-columns: repeat($val, 1fr);
+    }
+  }
+}
+
+.container{
+  width: 100%;
+  max-width: 1620px;
+  padding: 0 50px;
+  margin: auto;
+
+  @include tablet{
+    padding: 0 30px;
+  }
+
+  @include mobile{
+    padding: 0 20px;
+  }
+}
+
+.main{
+  margin-top: $header-height;
+  margin-bottom: 2rem;
+  min-height: 100vh;
+
+  @include tablet{
+    margin-top: calc(#{$header-tablet-height} + 20px);
+  }
+
+  @include mobile{
+    margin-top: calc(#{$header-mobile-height} + 10px);
+  }
+}
+
+.filterItem{
+  @include flex(center, flex-end);
+  padding-bottom: 20px;
+  select{
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+  }
+}
+
+option{
+  font-family: 'Montserrat', sans-serif;
+}
+
+button.cart{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.search{
+  @include flex(center, center);
+  margin-bottom: 50px;
+  &-title{
+    font-size: 20px;
+  }
+}
+
+select{
+  cursor: pointer;
+
+  &.colorSelect{
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    border: none;
+    outline: none;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+option{
+  cursor: pointer;
+}
+
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.notFound{
+  font-size:26px;
+  width: 100%;
+
+  @include mobile{
+    font-size: 20px;
+  }
+
+  &-item{
+    transform:translateY(40%);
+    @include flex(center, center);
+    flex-direction: column;
+  }
+
+  &-instruct{
+    padding: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+    border: 1px solid #a8a8a8;
+    border-radius: 10px;
+
+    @include mobile{
+      font-size: 12px;
+    }
+  }
+}
+
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+
+  @include mobile{
+    transform: translateX(-55%);
+  }
+}
