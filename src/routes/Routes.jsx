@@ -136,7 +136,12 @@ export default class Routes extends Component {
         )}
         />
 
-        <Route path='/search' exact component={Search} />
+        <Route 
+        path='/search' 
+        exact 
+        render={props => (
+          <Search {...props}
+          data={this.props.data.user} />)}/>
 
         <Route 
         path='/user' 
