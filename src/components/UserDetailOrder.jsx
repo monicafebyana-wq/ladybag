@@ -134,6 +134,8 @@ const UserDetailOrder = (props) => {
                 }
               </div>
             </Grid>
+          </Grid>
+          <Grid container spacing={5}>
             <Grid item sm={6}>
               <div className="oSummary-subtotal-text">
                 Shipping
