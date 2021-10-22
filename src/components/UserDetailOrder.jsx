@@ -136,7 +136,7 @@ const UserDetailOrder = (props) => {
             </Grid>
           </Grid>
           <Grid container spacing={5}>
-            <Grid item sm={6}>
+            <Grid item sm={8}>
               <div className="oSummary-subtotal-text">
                 Shipping
               </div>
@@ -145,14 +145,9 @@ const UserDetailOrder = (props) => {
               district.map((item, i) => (
                 props.district_id === item.id ?
                 <div key={i}>
-                  <Grid item sm={2}>
-                    <div className="price">
-                      {item.name}
-                    </div>
-                  </Grid>
                   <Grid item sm={4}>
-                    <div className="price">
-                    Rp. {item.price.toLocaleString()}
+                    <div className="oSummary-total-price price">
+                      {item.name} : Rp. {item.price.toLocaleString()}
                     </div>
                   </Grid>
                 </div>
