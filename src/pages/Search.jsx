@@ -54,6 +54,12 @@ const Search = () => {
               <ProductsCard
                 key={i}
                 {...item}
+                idUser={
+                  this.props.data===undefined?
+                  '' 
+                  : 
+                  this.props.data.id
+                }
               />
             </Grid>
           ))
