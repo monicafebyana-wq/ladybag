@@ -14,7 +14,7 @@ const override = css`
     border-color: red;
   `;
 
-const Search = () => {
+const Search = (props) => {
   const location = useLocation()
   const fromNav = location.state?.name
 
@@ -55,10 +55,10 @@ const Search = () => {
                 key={i}
                 {...item}
                 idUser={
-                  this.props.data===undefined?
+                  props.data===undefined?
                   '' 
                   : 
-                  this.props.data.id
+                  props.data.id
                 }
               />
             </Grid>
