@@ -60,12 +60,12 @@ const OrderSummary = props => {
         <div className="hr"/>
         <div className="oSummary-subtotal">
           <Grid container spacing={5}>
-            <Grid item sm={8}>
+            <Grid item sm={8} xs={7}>
               <div className="oSummary-subtotal-text">
                 Subtotal
               </div>
             </Grid>
-            <Grid item sm={4}>
+            <Grid item sm={4} xs={5}>
               <div className="price">
               Rp.
                 {
@@ -82,12 +82,12 @@ const OrderSummary = props => {
             <form onSubmit={onSubmit}>
               <div className="oSummary-total">
                 <Grid container spacing={5}>
-                  <Grid item sm={6}>
+                  <Grid item sm={6} xs={5}>
                     <div className="oSummary-total-shipping">
                       Shipping
                     </div>
                   </Grid>
-                  <Grid item sm={6}>
+                  <Grid item sm={6} xs={7}>
                     <div className="price">
                       <select name="shipping" className="oSummary-select" id="shipping">
                         {
@@ -106,12 +106,12 @@ const OrderSummary = props => {
                   </Grid>
                 </Grid>
                 <Grid container spacing={5}>
-                  <Grid item sm={7}>
+                  <Grid item sm={7} xs={6}>
                     <div className="oSummary-total-text">
                       Total
                     </div>
                   </Grid>
-                  <Grid item sm={5}>
+                  <Grid item sm={5} xs={6}>
                     <div className="oSummary-total-price price">
                       {
                         ongkir.map((item, i) => (
