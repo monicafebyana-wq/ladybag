@@ -51,52 +51,52 @@ const UserDetailOrder = (props) => {
         title="Customer Details"
         />
           <Grid container spacing={3}>
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={5}>
               <div className="oSummary-list-item-bag">
                 Name 
               </div>
             </Grid>
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={7}>
               {props.fullname}
             </Grid>
           </Grid>
           <Grid container spacing={3}>
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={5}>
               <div className="oSummary-list-item-bag">
                 Address 
               </div>
             </Grid>
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={7}>
               {props.address}
             </Grid>
           </Grid>
           <Grid container spacing={3}>
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={5}>
               <div className="oSummary-list-item-bag">
                 Phone 
               </div>
             </Grid>
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={7}>
               {props.phone}
             </Grid>
           </Grid>
           <Grid container spacing={3}>
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={5}>
               <div className="oSummary-list-item-bag">
                 Payment Method 
               </div>
             </Grid>
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={7}>
               Cash On Delivery (COD)
             </Grid>
           </Grid>
           <Grid container spacing={3}>
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={5}>
               <div className="oSummary-list-item-bag">
                 Status
               </div>
             </Grid>
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={7}>
               {
                 status.map((item, i) => (
                   props.status_id === item.id ?
@@ -129,12 +129,12 @@ const UserDetailOrder = (props) => {
         <div className="hr"/>
         <div className="oSummary-subtotal">
           <Grid container spacing={5}>
-            <Grid item sm={8}>
+            <Grid item sm={8} xs={5}>
               <div className="oSummary-subtotal-text">
                 Subtotal
               </div>
             </Grid>
-            <Grid item sm={4}>
+            <Grid item sm={4} xs={7}>
               <div className="price">
               Rp.
                 {
@@ -167,12 +167,12 @@ const UserDetailOrder = (props) => {
             <div className="hr" />
               <div className="oSummary-total">
                 <Grid container spacing={5}>
-                  <Grid item sm={8}>
+                  <Grid item sm={8} xs={5}>
                     <div className="oSummary-total-text">
                       Total
                     </div>
                   </Grid>
-                  <Grid item sm={4}>
+                  <Grid item sm={4} xs={7}>
                     <div className="oSummary-total-price price">
                       Rp. {props.total.toLocaleString()}
                     </div>
