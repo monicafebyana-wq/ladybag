@@ -12,6 +12,7 @@
 
   @include mobile{
     min-width: 122%;
+    max-height: 100vh;
     @include flex(center, center);
     flex-direction:column-reverse;
   }
