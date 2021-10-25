@@ -8,12 +8,12 @@ const OrderItem = props => {
   return (
     <div className="oSummary-list-item">
       <Grid container spacing={5}>
-        <Grid item sm={8}>
+        <Grid item sm={8} xs={7}>
           <div className="oSummary-list-item-bag">
             {props.product_name}, {props.image.warna} x{props.quantity}
           </div>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item sm={4} xs={5}>
           <div className="price">
             Rp. {total.toLocaleString()}
           </div>
