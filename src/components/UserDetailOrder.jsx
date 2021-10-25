@@ -59,6 +59,8 @@ const UserDetailOrder = (props) => {
             <Grid item sm={6}>
               {props.fullname}
             </Grid>
+          </Grid>
+          <Grid container spacing={3}>
             <Grid item sm={6}>
               <div className="oSummary-list-item-bag">
                 Address 
@@ -67,6 +69,8 @@ const UserDetailOrder = (props) => {
             <Grid item sm={6}>
               {props.address}
             </Grid>
+          </Grid>
+          <Grid container spacing={3}>
             <Grid item sm={6}>
               <div className="oSummary-list-item-bag">
                 Phone 
@@ -75,6 +79,8 @@ const UserDetailOrder = (props) => {
             <Grid item sm={6}>
               {props.phone}
             </Grid>
+          </Grid>
+          <Grid container spacing={3}>
             <Grid item sm={6}>
               <div className="oSummary-list-item-bag">
                 Payment Method 
@@ -83,6 +89,8 @@ const UserDetailOrder = (props) => {
             <Grid item sm={6}>
               Cash On Delivery (COD)
             </Grid>
+          </Grid>
+          <Grid container spacing={3}>
             <Grid item sm={6}>
               <div className="oSummary-list-item-bag">
                 Status
