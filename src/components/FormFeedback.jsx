@@ -46,6 +46,7 @@ export default class FormFeedback extends Component {
     ).then(response => {
       if (response.data.status === 'created'){
         store.addNotification(notifUtils[12]);
+        window.location.reload();
       }
     }).catch(error => {
       store.addNotification(notifUtils[10]);
