@@ -52,11 +52,6 @@ export default class Layout extends Component {
             {...props} 
             user={this.state.user} />
             <div className="absolute-bottom">
-              <Link to='/feedback'>
-                <button className="bottom-right">
-                  <i className='bx bxs-pencil'></i>
-                </button>
-              </Link>
             </div>
             <ReactNotification />
             <div className="container">
