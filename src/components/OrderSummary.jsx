@@ -126,13 +126,13 @@ const OrderSummary = props => {
                 </Grid>
               </div>
               <div className="oSummary-submit">
-                <input type="submit" value="place order" />
+                <input type="submit" value="pay now" />
               </div>
             </form>
           </div>
           :
           <Link to='/payment' className="oSummary-submit">
-            <input type="submit" value="place order" />
+            <input type="submit" value="checkout" />
           </Link>
         }
       </div>
