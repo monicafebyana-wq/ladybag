@@ -25,6 +25,7 @@ const Payment = (props) => {
   const [ongkirPrice, setOngkirPrice] = useState(0);
   const [address, setAddress] = useState(null);
   const [phone, setPhone] = useState(null);
+  const [username, setUsername] = useState(null);
   const [districts, setDistricts] = useState(1);
   const country = "Indonesia";
   const city = "Cimahi";
@@ -39,6 +40,7 @@ const Payment = (props) => {
     axios.get(`${process.env.REACT_APP_API_URL}users/${props.userId}`).then((response) => {
       setAddress(response.data.address);
       setPhone(response.data.phone);
+      setUsername(response.data.username);
     });
   }, []);
 
@@ -50,6 +52,10 @@ const Payment = (props) => {
 
   function onAddress(e){
     setAddress(e.target.value)
+  }
+
+  function onUsername(e){
+    setUsername(e.target.value)
   }
 
   function onPhone(e){
@@ -131,10 +137,10 @@ const Payment = (props) => {
                         <label htmlFor="fullName">Full Name <span aria-hidden="true" className="required">*</span></label>
                         <input type="text" 
                         name="firstName" 
-                        value={props.username} 
                         id="firstName" 
                         required 
-                        disabled
+                        placeholder={username ? username : "Full Name"}
+                        onChange={onUsername}
                         placeholder="Full Name"/>
                       </div>
                     </Grid>
