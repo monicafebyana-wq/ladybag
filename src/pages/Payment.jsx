@@ -82,7 +82,7 @@ const Payment = (props) => {
     axios.post(`${process.env.REACT_APP_API_URL}payments`, 
     { 
       user_id:props.userId,
-      fullname:props.username,
+      fullname:username,
       country:country,
       city:city,
       district_id:districts,
@@ -140,8 +140,7 @@ const Payment = (props) => {
                         id="firstName" 
                         required 
                         placeholder={username ? username : "Full Name"}
-                        onChange={onUsername}
-                        placeholder="Full Name"/>
+                        onChange={onUsername}/>
                       </div>
                     </Grid>
                     <Grid item xs={12}>
