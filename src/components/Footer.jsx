@@ -14,7 +14,7 @@ const Footer = () => {
         </div><br /><br />
         <div className="footer-content">
           <div className="footer-content-contact">
-          <p>Address : 04769 6F, 83-21, Wangsimni-ro, Seongdong-gu, Seoul, Republic of Korea</p><br />
+          <p>Address : Jl. HMS Mintareja Sarjana Hukum, Baros, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40521</p><br />
           <p>Phone : 211-88-17109</p><br />
           <p>E-mail : cscenter_en@ladybag.com</p>
           </div>
