@@ -18,6 +18,7 @@ const UserForm = (props) => {
   const [data, setData] = useState(null);
   const [address, setAddress] = useState(null);
   const [phone, setPhone] = useState(null);
+  const [username, setUsername] = useState(null);
 
   const url = `${process.env.REACT_APP_API_URL}users/${props.idUser}`
 
@@ -29,6 +30,10 @@ const UserForm = (props) => {
   useEffect(() => {
     dataUser();
   }, []);
+  
+  function onUsername(e){
+     setUsername(e.target.value)
+  }
   
   function onAddress(e){
     setAddress(e.target.value)
@@ -43,7 +48,8 @@ const UserForm = (props) => {
     axios.patch(`${process.env.REACT_APP_API_URL}users/${props.idUser}`, 
     { 
       address: address,
-      phone: phone 
+      phone: phone,
+      username: username
     },
     { withCredentials : true })
     .then(res => {
@@ -67,7 +73,7 @@ const UserForm = (props) => {
           <Grid item xs={12}>
             <div className="form-control-direction">
               <label htmlFor="fullName">Full Name <span aria-hidden="true" className="required">*</span></label>
-              <input type="text" name="fullName" disabled value={props.username} id="fullName" required placeholder="Full Name"/>
+              <input type="text" name="fullName" placeholder={data.username ? data.username : "Full Name"} id="fullName" onChange={onUsername} required/>
             </div>
           </Grid>
           <Grid item xs={12}>
