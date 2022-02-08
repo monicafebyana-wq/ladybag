@@ -31,7 +31,8 @@ export default class CartItemm extends Component {
 
   onEditCart = (id, e) =>{
     e.preventDefault();
-    axios.patch(`${process.env.REACT_APP_API_URL}line_items/${id}`, 
+    const idLine = this.idInput.value;
+    axios.patch(`${process.env.REACT_APP_API_URL}line_items/${idLine}`, 
     { 
       quantity: this.state.quantity 
     },
